@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senhas Absurdas (E onde habitam)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Senhas Mais <span>Absurdas</span> Que as Pessoas Usam</h1>
+            <p>Se a sua senha está aqui, por favor, mude-a hoje mesmo!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card simulator-section">
+            <h2>Sua senha é um perigo?</h2>
+            <p>Digite sua senha atual abaixo para nosso "algoritmo avançado de deboche" avaliar.</p>
+            <div class="input-group">
+                <input type="text" id="passwordInput" placeholder="Ex: 123456, mudaeu, senha123...">
+                <button id="checkBtn">Verificar Nível de Absurdo</button>
+            </div>
+            <div id="resultMessage" class="result-message hidden"></div>
+        </section>
+
+        <section class="grid-cards">
+            <div class="card font-card">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80" alt="Teclado numérico">
+                <h3>A Clássica Preguiçosa</h3>
+                <p class="bad-password">"123456"</p>
+                <p>Ano após ano, continua no topo do pódio mundial. Os hackers nem precisam de robôs, eles só adivinham piscando o olho.</p>
+            </div>
+
+            <div class="card font-card">
+                <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=500&q=80" alt="Alguém confuso">
+                <h3>A Literal</h3>
+                <p class="bad-password">"senha" ou "password"</p>
+                <p>Para quem odeia mistérios. É o equivalente a deixar a chave de casa pendurada na maçaneta pelo lado de fora com um bilhete "entre".</p>
+            </div>
+
+            <div class="card font-card">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=500&q=80" alt="Cachorro fofo olhando">
+                <h3>O Nome do Pet</h3>
+                <p class="bad-password">"rex2015" ou "thor123"</p>
+                <p>Fácil de lembrar? Sim. Mas qualquer um que olhe o seu Instagram por 2 minutos descobre o nome do seu cachorro e o ano que ele nasceu.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Proteja seus dados. Não use "123456".</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
