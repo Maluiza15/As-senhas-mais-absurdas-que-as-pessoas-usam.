@@ -1,0 +1,173 @@
+/* Reset básico e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0f0c1b;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1e1b4b 0%, #311042 100%);
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 3px solid #a855f7;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+header h1 span {
+    color: #ff007f;
+    text-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+/* Estilo dos Cards Gerais */
+.card {
+    background-color: #1e1b30;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #332a54;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Simulador de Senhas */
+.simulator-section {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+.simulator-section h2 {
+    color: #06b6d4;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#passwordInput {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #332a54;
+    background-color: #0f0c1b;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+#passwordInput:focus {
+    border-color: #06b6d4;
+}
+
+#checkBtn {
+    padding: 15px 25px;
+    background-color: #a855f7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#checkBtn:hover {
+    background-color: #ff007f;
+}
+
+/* Mensagem de resultado dinamica */
+.result-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.result-message.danger {
+    background-color: rgba(239, 68, 68, 0.2);
+    border: 1px solid #ef4444;
+    color: #fca5a5;
+}
+
+.result-message.warning {
+    background-color: rgba(245, 158, 11, 0.2);
+    border: 1px solid #f59e0b;
+    color: #fde047;
+}
+
+.result-message.success {
+    background-color: rgba(16, 185, 129, 0.2);
+    border: 1px solid #10b981;
+    color: #6ee7b7;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Grid de Senhas Famosas */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.font-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.font-card:hover {
+    transform: translateY(-5px);
+}
+
+.bad-password {
+    display: inline-block;
+    background-color: #2e122b;
+    color: #ff007f;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e1b30;
+}
